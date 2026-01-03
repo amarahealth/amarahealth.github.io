@@ -26,13 +26,13 @@
     body {
       background: var(--bg);
       color: var(--text);
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     /* HEADER */
     header {
       background: #fff;
-      padding: 18px 28px;
+      padding: 22px 32px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -43,14 +43,14 @@
     }
 
     .logo img {
-      height: 56px;
+      height: 72px; /* BIG LOGO */
     }
 
     .cta {
       background: var(--primary);
       color: #fff;
-      padding: 14px 22px;
-      border-radius: 12px;
+      padding: 14px 26px;
+      border-radius: 14px;
       text-decoration: none;
       font-weight: 500;
       font-size: 15px;
@@ -59,40 +59,48 @@
     /* HERO */
     .hero {
       max-width: 1200px;
-      margin: 56px auto;
-      padding: 0 20px;
+      margin: 64px auto;
+      padding: 0 24px;
     }
 
     .hero-box {
       background: var(--card);
-      border-radius: 28px;
-      padding: 56px;
+      border-radius: 32px;
+      padding: 64px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
     }
 
     .hero h1 {
-      font-size: 44px;
+      font-size: 48px;
       color: var(--deep);
       line-height: 1.15;
-      margin-bottom: 22px;
-      max-width: 720px;
+      margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 18px;
       color: var(--muted);
-      margin-bottom: 18px;
-      max-width: 640px;
+      margin-bottom: 16px;
+      max-width: 520px;
     }
 
-    /* SECTION BASE */
+    .hero img {
+      width: 100%;
+      border-radius: 22px;
+    }
+
+    /* SECTIONS */
     section {
       max-width: 1200px;
-      margin: 88px auto;
-      padding: 0 20px;
+      margin: 96px auto;
+      padding: 0 24px;
     }
 
     section h2 {
-      font-size: 32px;
+      font-size: 34px;
       color: var(--deep);
       margin-bottom: 18px;
     }
@@ -101,26 +109,26 @@
       font-size: 18px;
       color: var(--muted);
       max-width: 720px;
-      margin-bottom: 42px;
+      margin-bottom: 44px;
     }
 
     /* GRID */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 26px;
+      gap: 28px;
     }
 
     .card {
       background: var(--card);
       border-radius: 22px;
-      padding: 32px;
+      padding: 34px;
     }
 
     .card h3 {
       color: var(--primary);
       margin-bottom: 12px;
-      font-size: 19px;
+      font-size: 20px;
     }
 
     .card p {
@@ -128,10 +136,10 @@
       color: var(--muted);
     }
 
-    /* DEEP SECTIONS */
+    /* SOFT SECTION */
     .soft {
       background: var(--soft);
-      padding: 72px 20px;
+      padding: 88px 24px;
     }
 
     .soft .inner {
@@ -141,8 +149,8 @@
 
     /* FOOTER */
     footer {
-      margin-top: 100px;
-      padding: 40px 20px;
+      margin-top: 120px;
+      padding: 42px 24px;
       text-align: center;
       font-size: 14px;
       color: var(--muted);
@@ -151,19 +159,20 @@
     /* MOBILE */
     @media (max-width: 768px) {
       .hero-box {
+        grid-template-columns: 1fr;
         padding: 36px;
       }
 
       .hero h1 {
-        font-size: 30px;
+        font-size: 32px;
       }
 
       .hero p {
         font-size: 16px;
       }
 
-      section h2 {
-        font-size: 26px;
+      .logo img {
+        height: 60px;
       }
     }
   </style>
@@ -181,158 +190,125 @@
 <!-- HERO -->
 <div class="hero">
   <div class="hero-box">
-    <h1>Women’s health, supported with clarity and care.</h1>
-    <p>
-      Amara Health is built for women who are tired of piecing together advice,
-      routines and reassurance from scattered sources.
-    </p>
-    <p>
-      We support prenatal care, postnatal recovery and lifestyle-led management
-      of PCOS and PCOD through consistent, expert-led care delivered at home.
-    </p>
+    <div>
+      <h1>Women’s health,<br>supported with clarity and care.</h1>
+      <p>
+        Personalised prenatal, postnatal and PCOS-focused care —
+        delivered at home by female specialists.
+      </p>
+      <p>
+        No confusion. No unsafe routines. Just calm, consistent support.
+      </p>
+    </div>
+
+    <!-- Illustration-style, warm, relevant -->
+    <img
+      src="https://illustrations.popsy.co/purple/yoga-woman.svg"
+      alt="Prenatal exercise with female therapist"
+    />
   </div>
 </div>
 
-<!-- WHY AMARA -->
+<!-- WHY -->
 <section>
-  <h2>Why Amara Health exists</h2>
+  <h2>Why Amara Health</h2>
   <p class="lead">
-    Most women don’t lack effort. They lack structured, safe and sustained support.
+    Women don’t need more advice. They need structured support that stays.
   </p>
 
   <div class="grid">
     <div class="card">
-      <h3>The problem with fragmented care</h3>
+      <h3>Care that continues</h3>
       <p>
-        Pregnancy and hormonal conditions are often treated as isolated checklists.
-        A doctor visit here, a YouTube workout there, diet advice from somewhere else.
-        There is no continuity, and no one owns the full journey.
+        We don’t show up once and disappear. Care is designed to evolve
+        with your body, stage and energy.
       </p>
     </div>
 
     <div class="card">
-      <h3>Why consistency matters more than intensity</h3>
+      <h3>Built around safety</h3>
       <p>
-        Sustainable change doesn’t come from extreme plans.
-        It comes from small, guided actions repeated daily,
-        adjusted to the woman’s body, energy and stage of life.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Safety is non-negotiable</h3>
-      <p>
-        Random workouts and generic routines can do more harm than good.
         Especially during pregnancy, postnatal recovery and PCOS,
-        movement must be carefully designed and supervised.
+        safety is the foundation — not an afterthought.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Designed for real life</h3>
+      <p>
+        Home-based care that respects privacy, comfort and consistency.
       </p>
     </div>
   </div>
 </section>
 
-<!-- WHAT WE SUPPORT -->
+<!-- WHAT -->
 <section>
   <h2>What we support</h2>
   <p class="lead">
-    Programs designed around women’s bodies, not internet trends.
+    End-to-end care across key phases of women’s health.
   </p>
 
   <div class="grid">
     <div class="card">
       <h3>Prenatal care</h3>
       <p>
-        Trimester-appropriate movement, breathing, posture and nutrition support.
-        Focused on comfort, strength, confidence and safety throughout pregnancy.
+        Trimester-appropriate movement, breathing and nutrition support
+        guided by female physiotherapists.
       </p>
     </div>
 
     <div class="card">
       <h3>Postnatal recovery</h3>
       <p>
-        Recovery-first care addressing core strength, pelvic floor health,
-        fatigue and emotional wellbeing. No rushing, no pressure.
+        Gentle, progressive recovery focusing on strength, healing
+        and emotional wellbeing.
       </p>
     </div>
 
     <div class="card">
       <h3>PCOS & PCOD</h3>
       <p>
-        Structured 3-month lifestyle programs focused on habit-building,
-        not short-term fixes. Movement, nutrition and mental support work together.
+        3-month lifestyle programs built to create habits
+        that last beyond the program.
       </p>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
+<!-- HOW -->
 <div class="soft">
   <div class="inner">
-    <h2>How Amara Health works</h2>
+    <h2>How it works</h2>
     <p class="lead">
-      Designed to fit into real homes, real schedules and real lives.
+      Simple. Personal. Human.
     </p>
 
     <div class="grid">
       <div class="card">
-        <h3>Assessment before action</h3>
+        <h3>Understand first</h3>
         <p>
-          Every journey starts with understanding the woman’s body,
-          medical context, lifestyle and goals. No assumptions.
+          We assess your body, lifestyle and needs before recommending anything.
         </p>
       </div>
 
       <div class="card">
-        <h3>Care at home</h3>
+        <h3>Support at home</h3>
         <p>
-          Female physiotherapists, dieticians and mental health coaches
-          provide support in the comfort and privacy of home.
+          Female therapists, dieticians and mental health coaches
+          support you in your space.
         </p>
       </div>
 
       <div class="card">
-        <h3>Guided continuity</h3>
+        <h3>Build consistency</h3>
         <p>
-          Care is not one-off. It’s ongoing, adjusted over time,
-          and designed to build confidence and independence.
+          Small, guided actions that become part of daily life.
         </p>
       </div>
     </div>
   </div>
 </div>
-
-<!-- WHY TRUST -->
-<section>
-  <h2>Why women choose Amara Health</h2>
-  <p class="lead">
-    Because this is not about pushing harder. It’s about being supported better.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Female-led care</h3>
-      <p>
-        All care is delivered by trained female professionals
-        who understand women’s bodies and experiences.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Evidence-led, not trends-led</h3>
-      <p>
-        Every program is built on physiotherapy principles,
-        medical guidance and real-world outcomes.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Built for the long term</h3>
-      <p>
-        The goal is not dependency.
-        The goal is helping women build routines they can carry forward confidently.
-      </p>
-    </div>
-  </div>
-</section>
 
 <footer>
   © Amara Health. Thoughtfully built for women.
