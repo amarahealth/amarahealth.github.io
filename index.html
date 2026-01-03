@@ -1,231 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Amara Health</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Amara Health offers calm, expert-led support for women through prenatal, postnatal and PCOS care.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amara Health – Women’s Health & Wellness</title>
 
   <style>
     :root {
       --primary: #6A5ACD;
-      --deep: #4B3FA3;
-      --lavender-bg: #F3EEFF;
+      --secondary: #F3EEFF;
       --accent: #C9BFFF;
+      --deep: #4B3FA3;
       --text: #3A3A3A;
-      --stone: #F8F6F9;
+      --bg: #F8F6F9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
       color: var(--text);
-      background: white;
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     .container {
-      max-width: 960px;
+      max-width: 1100px;
       margin: auto;
       padding: 80px 24px;
     }
 
-    h1, h2 {
-      color: var(--deep);
+    header {
+      padding: 32px 24px;
       font-weight: 600;
-      letter-spacing: -0.5px;
+      font-size: 22px;
+      color: var(--primary);
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 24px;
+      font-size: 44px;
+      color: var(--deep);
+      margin-bottom: 20px;
     }
 
     h2 {
-      font-size: 26px;
-      margin-bottom: 16px;
+      font-size: 28px;
+      color: var(--deep);
+      margin-bottom: 12px;
     }
 
     p {
-      font-size: 16px;
-      max-width: 760px;
+      max-width: 720px;
+      margin-bottom: 16px;
     }
 
     .hero {
-      padding-top: 120px;
-      padding-bottom: 120px;
-    }
-
-    .hero p {
-      font-size: 18px;
-    }
-
-    .section {
-      background: var(--stone);
-    }
-
-    .block {
-      margin-bottom: 64px;
-    }
-
-    .soft-card {
-      background: var(--lavender-bg);
-      padding: 48px;
-      border-radius: 12px;
-    }
-
-    .divider {
-      width: 48px;
-      height: 4px;
-      background: var(--accent);
-      margin: 32px 0;
+      background: white;
+      border-radius: 20px;
+      padding: 80px;
     }
 
     .cta {
-      margin-top: 40px;
       display: inline-block;
+      margin-top: 24px;
       padding: 14px 28px;
-      border-radius: 28px;
       background: var(--primary);
       color: white;
+      border-radius: 10px;
       text-decoration: none;
-      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .steps {
+      margin-top: 40px;
+    }
+
+    .step {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 16px;
     }
 
     footer {
+      padding: 40px;
       text-align: center;
-      padding: 60px 24px;
       font-size: 14px;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 34px;
-      }
-      .soft-card {
-        padding: 32px;
-      }
+      color: #777;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero container">
+<header>
+  amarahealth
+</header>
+
+<section class="container">
+  <div class="hero">
     <h1>Women’s health, supported with clarity and care.</h1>
 
     <p>
-      Amara Health is a women’s health and wellness platform supporting
-      prenatal journeys, postnatal recovery, and hormonal conditions like
-      PCOS and PCOD.
+      Amara Health is a women’s health and wellness platform supporting prenatal journeys,
+      postnatal recovery, and hormonal conditions like PCOS and PCOD.
     </p>
 
     <p>
-      We bring together safe movement, nutrition and mental wellbeing —
-      guided by female specialists, delivered with consistency, not noise.
+      We bring together safe movement, nutrition and mental wellbeing guided by female specialists,
+      delivered at home with consistency, not noise.
     </p>
-  </section>
 
-  <!-- PRENATAL -->
-  <section class="section">
-    <div class="container block">
-      <h2>Prenatal support</h2>
-      <div class="divider"></div>
+    <a class="cta" href="#">Talk to a women’s health specialist</a>
+  </div>
+</section>
 
-      <p>
-        Pregnancy often comes with uncertainty about what is safe, what helps,
-        and what should be avoided.
-      </p>
+<section class="container">
+  <h2>What we help with</h2>
 
-      <p>
-        Our prenatal programs provide structured guidance through
-        female physiotherapists who support pregnancy-appropriate exercises
-        at the comfort of your home — daily, alternate days, or fully customised.
-      </p>
-
-      <p>
-        Nutrition support from dieticians or nutritionists, mental wellbeing
-        coaching, and specialised counselling such as lactation support
-        can be integrated as needed.
-      </p>
+  <div class="cards">
+    <div class="card">
+      <h3>Prenatal Care</h3>
+      <p>Safe, guided movement, nutrition and mental support through pregnancy.</p>
     </div>
-  </section>
 
-  <!-- POSTNATAL -->
-  <section>
-    <div class="container block soft-card">
-      <h2>Postnatal recovery</h2>
-      <div class="divider"></div>
-
-      <p>
-        Postnatal recovery is not just about returning to routine.
-        It is about allowing the body and mind the time and support to heal.
-      </p>
-
-      <p>
-        Our female therapists support recovery through guided movement at home,
-        focusing on rebuilding strength, restoring stability, and easing the
-        physical and emotional load of the postnatal phase.
-      </p>
-
-      <p>
-        Nutrition and mental wellbeing support are part of the same journey —
-        because recovery is never only physical.
-      </p>
+    <div class="card">
+      <h3>Postnatal Recovery</h3>
+      <p>At-home physiotherapy, pelvic floor recovery and emotional wellbeing.</p>
     </div>
-  </section>
 
-  <!-- PCOS -->
-  <section class="section">
-    <div class="container block">
-      <h2>PCOS & PCOD support</h2>
-      <div class="divider"></div>
-
-      <p>
-        PCOS and PCOD do not have a single permanent cure.
-        They require long-term lifestyle changes that are realistic
-        and sustainable.
-      </p>
-
-      <p>
-        Our structured programs support women over a focused period
-        to build habits around movement, nutrition and stress management,
-        guided by female therapists and nutrition specialists.
-      </p>
-
-      <p>
-        The goal is not short-term results, but lasting shifts that women
-        can continue independently over time.
-      </p>
+    <div class="card">
+      <h3>PCOS & PCOD</h3>
+      <p>Structured lifestyle programs focused on movement, diet and consistency.</p>
     </div>
-  </section>
 
-  <!-- FUTURE -->
-  <section>
-    <div class="container block soft-card">
-      <h2>Looking ahead</h2>
-      <div class="divider"></div>
-
-      <p>
-        In the future, Amara Health will also offer online training,
-        guided routines and coaching for women who may not be able
-        to access in-person support immediately.
-      </p>
-
-      <p>
-        We are building this carefully, with safety, trust and evidence
-        at the centre.
-      </p>
-
-      <a class="cta" href="#">Talk to a women’s health specialist (coming soon)</a>
+    <div class="card">
+      <h3>Mental & Nutritional Support</h3>
+      <p>Ongoing guidance from psychologists and dieticians who understand women’s health.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    © Amara Health. Thoughtfully built for women.
-  </footer>
+<section class="container">
+  <h2>How it works</h2>
+
+  <div class="steps">
+    <div class="step">
+      <strong>1. Understand your body</strong>
+      <p>We start by understanding your needs, stage and comfort.</p>
+    </div>
+
+    <div class="step">
+      <strong>2. Care at your home</strong>
+      <p>Female therapists visit you at home with structured, safe routines.</p>
+    </div>
+
+    <div class="step">
+      <strong>3. Consistent support</strong>
+      <p>Progress is built through consistency, guidance and mental reassurance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Looking ahead</h2>
+
+  <p>
+    In the future, Amara Health will also offer online training, guided routines and coaching
+    for women who may not be able to access in-person support immediately.
+  </p>
+
+  <p>
+    We are building this carefully, with safety, trust and evidence at the centre.
+  </p>
+</section>
+
+<footer>
+  © Amara Health. Thoughtfully built for women.
+</footer>
 
 </body>
 </html>
